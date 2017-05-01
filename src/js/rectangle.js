@@ -1,8 +1,11 @@
+import FillPattern from './fillPattern';
+
 export default class Rectangle {
 
-	constructor(height, width) {
+	constructor(height, width, fillPattern) {
 		this.height = height;
 		this.width = width;
+		this.fillPattern = fillPattern;
 	}
 
 	get area() {
@@ -23,8 +26,8 @@ export default class Rectangle {
 
 }
 
-const square = new Rectangle(10, 10);
-const square2 = new Rectangle(10, 'c');
+const square = new Rectangle(10, 10, FillPattern.HorizontalLines);
+const square2 = new Rectangle(10, 'c', 'DOTS');
 const square3 = new Rectangle(10);
 square.height = 3;
 square2.calcArea();

@@ -11,6 +11,13 @@
         ],
         "quotemark": [
             "single"
+        ],
+        "trailing-comma": [
+            false
+        ],
+        "align": [
+            "arguments",
+            "statements"
         ]
     }
 }
